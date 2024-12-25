@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Manager</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f9f9f9; }
+    header { background: #4CAF50; color: white; text-align: center; padding: 1em 0; }
+    .container { padding: 1em; }
+    .task { display: flex; align-items: center; margin: 0.5em 0; }
+    .task input { margin-right: 1em; }
+    .task.completed span { text-decoration: line-through; color: gray; }
+    input, button { padding: 0.5em; margin: 0.2em; border: 1px solid #ddd; border-radius: 5px; }
+    button { background: #4CAF50; color: white; border: none; cursor: pointer; }
+    button:hover { background: #45a049; }
+  </style>
+</head>
+<body>
+  <header><h1>Task Manager</h1></header>
+  <div class="container">
+    <div id="task-list"></div>
+    <input id="task-input" placeholder="New Task">
+    <button onclick="addTask()">Add</button>
+  </div>
+  <script>
+    function addTask() {
+      const taskInput = document.getElementById("task-input"), taskName = taskInput.value.trim();
+      if (!taskName) return alert("Enter a task!");
+      const taskList = document.getElementById("task-list"), task = document.createElement("div");
+      task.className = "task"; task.innerHTML = `<input type="checkbox" onchange="toggleTask(this)"><span>${taskName}</span>`;
+      taskList.appendChild(task); taskInput.value = "";
+    }
+    function toggleTask(checkbox) {
+      checkbox.parentElement.classList.toggle("completed");
+    }
+  </script>
+</body>
+</html>

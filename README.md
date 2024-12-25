@@ -63,6 +63,8 @@ Styling: Introduce basic CSS to improve the visual design, making the applicatio
 Task Editing: Allow users to edit a task after it has been added.
 Enhanced Features: Implement features like task categorization, prioritization, or due dates.
 Accessibility: Add ARIA attributes and improve keyboard navigation for users who rely on screen readers or other assistive technologies.
+
+
 Conclusion:
 This Task Manager (without CSS) is a basic and lightweight web application demonstrating core functionalities like task creation, toggling task completion, and basic DOM manipulation. It is a good starting point for beginners to practice using HTML and JavaScript together. However, for a fully featured task management tool, additional features like CSS styling, task persistence, and more advanced functionality could be added in the future.
 

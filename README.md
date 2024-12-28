@@ -4,7 +4,7 @@ Company:CODTECH IT SOLUTIONS
 ID:CT12DS3060
 Domain: Software Development 
 Duration: Dec 12th to Feb 12th 2025
-Mentor:NEHA
+Mentor:
 
 
 # OVERVIEW OF PROJECT 
@@ -68,6 +68,7 @@ Accessibility: Add ARIA attributes and improve keyboard navigation for users who
 Conclusion:
 This Task Manager (without CSS) is a basic and lightweight web application demonstrating core functionalities like task creation, toggling task completion, and basic DOM manipulation. It is a good starting point for beginners to practice using HTML and JavaScript together. However, for a fully featured task management tool, additional features like CSS styling, task persistence, and more advanced functionality could be added in the future.
 
+! ![1000125201](https://github.com/user-attachments/assets/55ba66e7-b6eb-47c6-9f42-c636c94e7824)
 
 
 
